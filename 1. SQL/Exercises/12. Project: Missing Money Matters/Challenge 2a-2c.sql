@@ -11,7 +11,9 @@ Description:
         c) How many transactions are above the average transaction amount during the same period?
 	Solution:
 		- Results stored in a view for next challenge.
-		- View results are printed
+		a) List is shown
+		b) Additional Information included
+		c) No. of sales above avg. per customer also included
 */
 DROP VIEW  IF EXISTS V_2011_Sales;
 CREATE VIEW V_2011_Sales AS
@@ -31,7 +33,7 @@ SELECT
 		FROM
 			Invoice
 		WHERE
-			total > (SELECT avg(total) FROM Invoice WHERE strftime('%Y',InvoiceDate) = '2011' ) AND CustomerId=i.CustomerId))
+			total > (SELECT avg(total) FROM Invoice WHERE strftime('%Y',InvoiceDate) IN( '2011','2012')) AND CustomerId=i.CustomerId))
 			AS 'No. Sales Above Avg.'
 FROM
 	Invoice as i
@@ -44,12 +46,10 @@ LEFT JOIN
 ON
 	c.SupportRepId = e.EmployeeId
 WHERE
-	strftime('%Y',i.InvoiceDate) = '2011'
+	strftime('%Y',i.InvoiceDate) IN( '2011','2012')
 GROUP BY
 	i.CustomerId
 ORDER BY
-	EmployeeId ASC, [No. Sales Above Avg.] DESC
-	-- Sort by 11th column (No. Sales Above Avg.)
-;
+	EmployeeId ASC, [No. Sales Above Avg.] DESC;
 
 SELECT * FROM V_2011_Sales

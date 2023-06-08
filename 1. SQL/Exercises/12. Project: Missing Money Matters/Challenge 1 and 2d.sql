@@ -27,5 +27,5 @@ FROM
 GROUP BY
 	strftime('%Y',i.InvoiceDate)
 /*HAVING
-	strftime('%Y',i.InvoiceDate) = '2011'
+	strftime('%Y',i.InvoiceDate) IN ('2011','2012')
 */

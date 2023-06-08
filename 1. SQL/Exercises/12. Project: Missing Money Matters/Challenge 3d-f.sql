@@ -36,6 +36,6 @@ LEFT JOIN
 ON
 	c.SupportRepId = e.EmployeeId
 WHERE
-	c.SupportRepId = 3 AND strftime('%Y',i.InvoiceDate) = '2011'
+	c.SupportRepId = 3 AND strftime('%Y',i.InvoiceDate)  IN( '2011','2012')
 ORDER BY
 	total DESC
