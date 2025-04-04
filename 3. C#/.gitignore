@@ -1,0 +1,76 @@
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Dd]ist/
+[Dd]eploy/
+[Dd]ebug-*/   # Catch all Debug directories, including Debug for different configurations
+[Dd]ist-*/    # Catch all Dist directories for different configurations
+[Dd]ebug-*/**
+[Dd]eploy-*/**
+
+# User-specific files
+.idea/
+.vscode/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows Installer XML files
+*.wixproj
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Microsoft Visual Studio for Mac
+.vscode/
+
+# JetBrains Rider
+.idea/
+
+# Build results
+bin/
+obj/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# VS for Mac
+.vscode/
+
+# User-specific files
+.idea/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Other files you don't need in version control
+*.log
+*.vspscc
+*.vssscc
+*.suo
