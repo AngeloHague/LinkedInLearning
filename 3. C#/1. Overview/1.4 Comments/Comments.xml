@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>1.4 Comments</name>
+    </assembly>
+    <members>
+        <member name="M:MyApp.Program.Main(System.String[])">
+            XML Comments
+            <summary>
+            This is a summary of the class
+            </summary>
+            <param name="args"> An array of string arguments from CLI</param>
+            <returns> Returns nothing</returns>
+        </member>
+    </members>
+</doc>
