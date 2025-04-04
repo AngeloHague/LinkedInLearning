@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CABdZRMbdUI+5KZuOuU98FhUnotWynwTTV5VlIoK4rhLhaLOly2Se22xApaswIuChz7QZaQTBHsoSDGH/jIbTw==",
+  "dgSpecHash": "sxBfpq8y3Ww=",
   "success": true,
-  "projectFilePath": "/Users/cjmarini/Documents/Git/Lynda/LearningCSharp/Finished/Overview/HelloWorld/HelloWorld.csproj",
+  "projectFilePath": "E:\\Github\\LinkedInLearning\\3. C#\\Ex_Files_Learning_C_Sharp\\LearningCSharp\\DotNet7\\Finished\\Overview\\HelloWorld\\HelloWorld.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

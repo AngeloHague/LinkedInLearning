@@ -1,36 +1,38 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net9.0": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net9.0": []
   },
   "packageFolders": {
-    "/Users/cjmarini/.nuget/packages/": {}
+    "C:\\Users\\angel\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/cjmarini/Documents/Git/Lynda/LearningCSharp/Finished/Overview/HelloWorld/HelloWorld.csproj",
+      "projectUniqueName": "E:\\Github\\LinkedInLearning\\3. C#\\Ex_Files_Learning_C_Sharp\\LearningCSharp\\DotNet7\\Finished\\Overview\\HelloWorld\\HelloWorld.csproj",
       "projectName": "HelloWorld",
-      "projectPath": "/Users/cjmarini/Documents/Git/Lynda/LearningCSharp/Finished/Overview/HelloWorld/HelloWorld.csproj",
-      "packagesPath": "/Users/cjmarini/.nuget/packages/",
-      "outputPath": "/Users/cjmarini/Documents/Git/Lynda/LearningCSharp/Finished/Overview/HelloWorld/obj/",
+      "projectPath": "E:\\Github\\LinkedInLearning\\3. C#\\Ex_Files_Learning_C_Sharp\\LearningCSharp\\DotNet7\\Finished\\Overview\\HelloWorld\\HelloWorld.csproj",
+      "packagesPath": "C:\\Users\\angel\\.nuget\\packages\\",
+      "outputPath": "E:\\Github\\LinkedInLearning\\3. C#\\Ex_Files_Learning_C_Sharp\\LearningCSharp\\DotNet7\\Finished\\Overview\\HelloWorld\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/cjmarini/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\angel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net7.0"
+        "net9.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net9.0": {
+          "targetAlias": "net9.0",
           "projectReferences": {}
         }
       },
@@ -38,11 +40,17 @@
         "warnAsError": [
           "NU1605"
         ]
-      }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
-      "net7.0": {
-        "targetAlias": "net7.0",
+      "net9.0": {
+        "targetAlias": "net9.0",
         "imports": [
           "net461",
           "net462",
@@ -59,7 +67,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/7.0.102/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
