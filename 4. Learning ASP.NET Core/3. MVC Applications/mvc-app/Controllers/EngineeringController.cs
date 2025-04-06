@@ -1,5 +1,6 @@
 // Created with: dotnet new mvccontroller -n EngineeringController -o Controllers --namespace mvc_app.Controllers
 using Microsoft.AspNetCore.Mvc;
+using mvc_app.Models;
 
 namespace mvc_app.Controllers
 {
@@ -16,7 +17,8 @@ namespace mvc_app.Controllers
         public ActionResult CurrentProjects()
         {
             // Finish this in the next lesson
-            return View();
+            var engineeringDepartment = new EngineeringDepartment();
+            // return View();
         }
 
 
