@@ -32,7 +32,7 @@ app.MapGet("/api/books", () =>
 .WithName("GetAllBooks")
 .WithOpenApi();
 
-app.MapGet("/api/books/search/{term}", (string term) =>
+app.MapGet("/api/books/search/term/{term}", (string term) =>
 {
     List<Book> results = [];
     foreach (Book book in books)
@@ -40,12 +40,42 @@ app.MapGet("/api/books/search/{term}", (string term) =>
         if (book.Title.Contains(term, StringComparison.OrdinalIgnoreCase) ||
             book.Author.Contains(term, StringComparison.OrdinalIgnoreCase))
         {
-           results.Add(book);
+            results.Add(book);
         }
     }
     return results;
 })
 .WithName("SearchBooks")
+.WithOpenApi();
+
+app.MapGet("/api/books/search/title/{term}", (string term) =>
+{
+    List<Book> results = [];
+    foreach (Book book in books)
+    {
+        if (book.Title.Contains(term, StringComparison.OrdinalIgnoreCase))
+        {
+            results.Add(book);
+        }
+    }
+    return results;
+})
+.WithName("SearchBookTitles")
+.WithOpenApi();
+
+app.MapGet("/api/books/search/author/{term}", (string term) =>
+{
+    List<Book> results = [];
+    foreach (Book book in books)
+    {
+        if (book.Author.Contains(term, StringComparison.OrdinalIgnoreCase))
+        {
+            results.Add(book);
+        }
+    }
+    return results;
+})
+.WithName("SearchBookAuthors")
 .WithOpenApi();
 
 app.Run();
