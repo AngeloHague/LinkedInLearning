@@ -24,3 +24,6 @@ Can be added using;
 - Serve data to all types of apps
 - Define endpoints with handlers in lambdas or methods
 - Many, but not all of the features available in controller-based APIs.
+### Create with .NET CLI
+Can be created using; 
+```dotnet new webapi```
