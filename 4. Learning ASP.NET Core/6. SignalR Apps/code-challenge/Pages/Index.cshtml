@@ -5,6 +5,18 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4" style="margin-bottom: 16px;">Welcome</h1>
+    @* <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p> *@
+    <div class="flex">
+        <div>
+            Message
+            <input type="text" id="employee" placeholder="Enter your name" />
+            <input type="text" id="amount" placeholder="Enter the sale amount" />
+            <input type="button" id="send" value="Send Sale" />
+        </div>
+        <div style="margin-top: 20px;" >
+            <h3>New Sales</h3>
+            <div id="highSales" class="flex flex-col"></div>
+        </div>
+    </div>
 </div>

@@ -2,6 +2,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddSignalR(); // Load SignalR Services
 
 var app = builder.Build();
 
@@ -22,5 +23,7 @@ app.UseAuthorization();
 app.MapStaticAssets();
 app.MapRazorPages()
    .WithStaticAssets();
+
+app.MapHub<SalesHub>("/salesHub"); // register hub
 
 app.Run();
