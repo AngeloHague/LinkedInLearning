@@ -61,3 +61,11 @@ While running in development, the JSON can be found at; `/swagger/v1/swagger.jso
 #### Viewing the UI
 While running in development, the JSON can be found at; `/swagger/index.html`
 
+## Code Challenge
+- Create a minimal Web API ✅
+- Remove Weather Forecast Data ✅
+- Create Book Record with String Properties for Title and Author ✅
+- Create several instances in a stored variable ✅
+- Create an endpoint to return all books ✅
+- Create an endpoint to search books by a param ✅
+- Use Swagger to test ✅
