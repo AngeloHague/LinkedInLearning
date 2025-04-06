@@ -4,11 +4,16 @@ There are two different types of .NET WEB APIs;
 - Minimal web APIs
 
 ## Controller-based Web APIs
+### Features
 - Designed to work over HTTP
 - Used to build RESTful APIs
 - Serve data to all types of apps
 - Build around controller classes (similar to MVC)
 - Full-featured including model binding, model validation, JsonPatch, and more.
+### Create with .NET CLI
+Can be created using; 
+```dotnet new webapi --use-controllers```
+
 
 ## Minimal Web APIs
 - Designed to work over HTTP
