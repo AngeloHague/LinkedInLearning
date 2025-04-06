@@ -6,3 +6,6 @@
     - Server-sent events
     - Long polling
 - May be used within other ASP.NET Core projects
+
+## Adding to existing projects
+Add a *MessageHub.cs* class to the root of the project.
