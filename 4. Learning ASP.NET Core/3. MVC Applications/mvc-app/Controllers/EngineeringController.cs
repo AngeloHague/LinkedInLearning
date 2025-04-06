@@ -18,7 +18,8 @@ namespace mvc_app.Controllers
         {
             // Finish this in the next lesson
             var engineeringDepartment = new EngineeringDepartment();
-            // return View();
+            // Because this uses the EngineeringController, it will check the Views folder for "Engineering" first, then "Shared"
+            return View(engineeringDepartment);
         }
 
 
