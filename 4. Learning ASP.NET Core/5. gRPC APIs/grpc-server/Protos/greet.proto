@@ -13,7 +13,7 @@ service Greeter {
 
 message Employee {
   string name = 1;
-  in32 empID = 2;
+  int32 empID = 2;
   string department = 3;
   bool isNewEmployee = 4;
 }
