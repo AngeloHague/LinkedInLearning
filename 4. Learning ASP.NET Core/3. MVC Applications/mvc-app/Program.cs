@@ -20,6 +20,7 @@ app.UseAuthorization();
 
 app.MapStaticAssets();
 
+// Define a route for the default controller and action
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}")
