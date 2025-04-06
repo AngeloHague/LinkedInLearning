@@ -2,9 +2,30 @@
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
+    ViewData["WelcomeMessage"] = "Welcome to my first Razor Pages app!";
+
+    var thanksMessage = "Thanks for visiting!";
+
+    string Greeting() {
+        return $"{ViewData["WelcomeMessage"]} - {thanksMessage}";
+    }
 }
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    @* <p>@ViewData["WelcomeMessage"]</p>
+    <p>@thanksMessage</p> *@
+
+    @if (Model.ShowGreeting) {
+        <p>@Greeting()</p>
+    } else {
+        <p>Greeting is not shown.</p>
+    }
+
+    <h2 class="display-6">Here are some other project types to explore:</h2>
+    <ul>
+        @foreach (var projectType in Model.OtherProjectTypes) {
+            <li>@projectType</li>
+        }
+    </ul>
 </div>
