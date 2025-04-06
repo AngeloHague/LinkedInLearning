@@ -18,4 +18,12 @@ public class GreeterService : Greeter.GreeterBase
             Message = "Hello " + request.Name
         });
     }
+
+    public override Task<HelloReply> GreetNewEmployee(Employee employee, ServerCallContext context)
+    {
+        return Task.FromResult(new HelloReply
+        {
+            Message = "Welcome to the company " + employee.Name
+        });
+    }
 }
