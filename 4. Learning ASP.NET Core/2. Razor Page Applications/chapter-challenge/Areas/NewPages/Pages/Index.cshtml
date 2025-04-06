@@ -1,0 +1,14 @@
+﻿@page "{slug?}"
+@model chapter_challenge.NewPages.IndexModel
+@{
+}
+
+@section NamedSection {
+    <h1 class="display-1">Welcome to this Named Section</h1>
+    <p>This is a named section in the layout.</p>
+}
+
+@if (@Model.Slug is not null) {
+    <h2>Slug: @Model.Slug</h2>
+    <p>You've landed on a child page with a slug</p>
+}
