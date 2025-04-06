@@ -12,7 +12,6 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
     @* <p>@ViewData["WelcomeMessage"]</p>
     <p>@thanksMessage</p> *@
 
@@ -29,3 +28,12 @@
         }
     </ul>
 </div>
+
+@section Scripts {
+    <!-- #custom script section tag  -->
+    <script type="text/javascript" src="~/js/site.js"></script>
+}
+
+@section Welcome {
+    <h1 class="display-4 text-center">Welcome to Index.cshtml</h1>
+}
