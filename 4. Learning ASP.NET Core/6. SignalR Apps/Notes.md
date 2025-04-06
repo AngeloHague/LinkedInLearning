@@ -19,3 +19,9 @@ public class MessageHub : Hub {
     }
 }
 ```
+
+## Adding a client message sender / receiver
+- Add a form
+- Add SignalR Javascript
+    - Run `npm install @microsoft/signalr`
+    - Copy **signalr.min.js** from `node_modules\@microsoft\signalr\dist\browser\` to `wwwroot\js\`

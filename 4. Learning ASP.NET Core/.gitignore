@@ -74,3 +74,6 @@ obj/
 *.vspscc
 *.vssscc
 *.suo
+
+# node modules
+node_modules/
