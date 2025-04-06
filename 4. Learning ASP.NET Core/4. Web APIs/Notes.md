@@ -48,3 +48,16 @@ app.MapGet("/path/to/route/{param}", (string param) => {
     return $"Your input param is {param}.";
 });
 ```
+
+### Testing with Swagger (Versions below .NET 9.0)
+Swagger has been deprecated as of .NET 9.0, and is not shipped with the template. As such, I created an APi with an earlier version to continue to learn these features.
+```powershell
+dotnet new webapi -f net8.0 -o minimal-api-dotnet-8
+```
+
+#### Checking the JSON
+While running in development, the JSON can be found at; `/swagger/v1/swagger.json`
+
+#### Viewing the UI
+While running in development, the JSON can be found at; `/swagger/index.html`
+
