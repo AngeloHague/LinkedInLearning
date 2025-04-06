@@ -13,6 +13,9 @@ There are two different types of .NET WEB APIs;
 ### Create with .NET CLI
 Can be created using; 
 ```dotnet new webapi --use-controllers```
+### Adding controllers
+Can be added using; 
+```dotnet new apicontroller  --name [NAME] --output [FOLDER] --namespace [NAMESPACE] --actions```
 
 
 ## Minimal Web APIs
