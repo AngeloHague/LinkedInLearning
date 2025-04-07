@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option csharp_namespace = "code_challenge";
+
+package books;
+
+// The greeting service definition.
+service Books {
+  // Sends a greeting
+  rpc GetAuthor (GetBookAuthorRequest) returns (GetBookAuthorResponse);
+}
+
+// The request message containing the user's name.
+message GetBookAuthorRequest {
+  string title = 1;
+}
+
+// The response message containing the greetings.
+message GetBookAuthorResponse {
+  string author = 1;
+}
