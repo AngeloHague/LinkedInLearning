@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "grpc-client"
+		},
+		{
+			"path": "code-challenge"
 		}
 	],
 	"settings": {}
