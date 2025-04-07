@@ -1,4 +1,5 @@
 ﻿@page "/weather"
+@rendermode InteractiveServer
 @attribute [StreamRendering]
 
 <PageTitle>Weather</PageTitle>
@@ -35,6 +36,8 @@ else
         </tbody>
     </table>
 }
+
+<ThankYou />
 
 @code {
     private WeatherForecast[]? forecasts;

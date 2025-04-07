@@ -1,0 +1,11 @@
+<h3>Thank you for visiting</h3>
+<p>We hope you found what you were looking for.</p>
+
+<button class="btn btn-primary" @onclick="YoureWelcomeClick">@YoureWelcomeText</button>
+
+@code {
+    string YoureWelcomeText { get; set; } = "You're welcome";
+    private void YoureWelcomeClick() {
+        YoureWelcomeText = ":)";
+    }
+}
