@@ -15,8 +15,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
-    <Protobuf Include="Protos\greet.proto" GrpcServices="Client" />
-    <Protobuf Include="Protos\webdev.proto" GrpcServices="Client" />
+    <Protobuf Include="Protos\books.proto" GrpcServices="Client" />
   </ItemGroup>
 
 </Project>
